@@ -1,0 +1,13 @@
+{
+  "wp-content/themes/vieuxmoulin/resources/css/styles.scss": {
+    "file": "assets/css-D0fh3uF9.css",
+    "src": "wp-content/themes/vieuxmoulin/resources/css/styles.scss",
+    "isEntry": true
+  },
+  "wp-content/themes/vieuxmoulin/resources/js/main.js": {
+    "file": "assets/js-l0sNRNKZ.js",
+    "name": "js",
+    "src": "wp-content/themes/vieuxmoulin/resources/js/main.js",
+    "isEntry": true
+  }
+}
