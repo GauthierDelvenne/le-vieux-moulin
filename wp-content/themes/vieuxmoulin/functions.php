@@ -9,3 +9,4 @@ include_once __DIR__ . '/functions/disable-gutenberg.php';
 include_once __DIR__ . '/functions/remove-default-actions.php';
 include_once __DIR__ . '/functions/vite-manifest.php';
 include_once __DIR__ . '/functions/srcset-create.php';
+include_once __DIR__ . '/functions/navigation.php';
