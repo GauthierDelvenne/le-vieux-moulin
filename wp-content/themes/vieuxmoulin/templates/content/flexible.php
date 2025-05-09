@@ -2,10 +2,12 @@
   while (have_rows('content')): the_row();
     if (get_row_layout() === 'text-media'):
       include('text-media/text-media.php');
+    elseif (get_row_layout() === 'text'):
+      include('text/text.php');
+    elseif (get_row_layout() === 'list'):
+      include('list/list.php');
     elseif (get_row_layout() === 'gallery'):
       include('gallery/gallery.php');
-    elseif (get_row_layout() === 'slider'):
-      include('slider/slider.php');
     elseif (get_row_layout() === 'image'):
       include('image/image.php');
     endif;

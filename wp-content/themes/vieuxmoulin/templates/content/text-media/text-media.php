@@ -1,5 +1,6 @@
     <?php $supline = get_sub_field('supline') ?>
     <?php $headline = get_sub_field('headline') ?>
+    <?php $subline = get_sub_field('subline') ?>
     <?php $text = get_sub_field('text') ?>
     <?php $cta = get_sub_field('cta') ?>
     <?php $image = get_sub_field('image') ?>
@@ -20,9 +21,9 @@
                     <?= $headline ?>
                 </h2>
             <?php endif; ?>
-            <?php if ($supline !== '' && isset($supline)): ?>
+            <?php if ($subline !== '' && isset($subline)): ?>
                 <p class="text-mediacontent-subline">
-                    <?= $supline ?>
+                    <?= $subline ?>
                 </p>
             <?php endif; ?>
             <?php if ($text !== '' && isset($text)): ?>
@@ -40,7 +41,7 @@
         </div>
         <?php if (!empty($image)): ?>
             <div class="text-mediaposition text-mediaposition--<?= $media_position ?>">
-                <?= responsive_image($image, ['classes' => 'text-media__image', 'lazy' => true]) ?>
+                <?= responsive_image($image, ['classes' => 'text-media__image', 'lazy' => 'lazy']) ?>
             </div>
         <?php endif; ?>
     </section>
