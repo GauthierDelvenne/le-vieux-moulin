@@ -12,17 +12,32 @@
     <meta name="googlebot" content="index, follow">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
     <link rel="stylesheet" type="text/css" href="<?= vieuxmoulin_asset('css'); ?>">
-<!--    <link rel="icon"-->
-<!--          type="image/png"-->
-<!--          sizes="32x32"-->
-<!--          href="/wp-content/themes/vieuxmoulin/resources/img/...">-->
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="/wp-content/themes/vieuxmoulin/resources/img/LogoVM.png">
     <script src="<?= vieuxmoulin_asset('js') ?>" defer></script>
-
     <?php wp_head(); ?>
-
 </head>
 <body>
+<?php
+require __DIR__ . '/resources/svg/sprite.php'
+?>
 <header class="header">
     <h1 aria-level="1" class="hidden"><?= get_bloginfo('name') ?></h1>
+    <svg class="logo" width="86" height="86" viewBox="0 0 86 86">
+        <use xlink:href="#logo"></use>
+    </svg>
+    <nav class="header__nav" aria-label="Menu principal">
+        <input type="checkbox" id="burger" role="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <ul id="menu" class="header__nav__container">
+            <?php foreach (dw_get_navigation_links('header') as $link): ?>
+                <li class="nav__item">
+                    <a href="<?= $link->href; ?>" class="nav__link"><?= $link->label; ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </nav>
 </header>
+
 <main>
