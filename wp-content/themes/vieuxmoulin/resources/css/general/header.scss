@@ -1,0 +1,99 @@
+@import "../settings/breakpoints";
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  padding: 0.313rem 0;
+  .logo{
+    z-index: 1;
+  }
+  &__nav {
+    input {
+      display: grid;
+      width: 40px;
+      aspect-ratio: 1;
+      overflow: hidden;
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+
+      &::before, &::after {
+        content: "";
+        grid-area: 1/1;
+        transition: .3s;
+        z-index: 1;
+      }
+
+      &::before {
+        background: radial-gradient(closest-side at 12.5% 25%, #000000 96%, #0000) 0 0/80% 40%,
+        linear-gradient(#000000 50%, #0000 0) top/80% 40% repeat-y;
+      }
+
+      &::after {
+        padding: 10%;
+        background: radial-gradient(closest-side at 50% 12.5%, #000000 96%, #0000) top /20% 80% repeat-y,
+        radial-gradient(closest-side at 12.5% 50%, #000000 96%, #0000) left/80% 20% repeat-x,
+        conic-gradient(from 90deg at 33% 33%, #0000 90deg, #000000 0) 100% 100%/60% 60% padding-box content-box;
+        transform: rotate(45deg);
+        opacity: 0;
+      }
+
+      &:checked::before {
+        transform: translate(100%);
+        opacity: 0;
+      }
+
+      &:checked::after {
+        opacity: 1;
+      }
+      &:checked + ul {
+        transform: unset;
+        opacity: 1;
+      }
+      @include desktop-up{
+        display: none;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      position: absolute;
+      background: white;
+      top: -15rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      justify-content: center;
+      row-gap: 30px;
+      transform: translate(-100%);
+      will-change: transform, opacity;
+      opacity: 0;
+      transition: .3s;
+      @include desktop-up {
+        flex-direction: row;
+        gap: 2.625rem;
+        opacity: 1;
+        transform: unset;
+        position: initial;
+        flex-flow: initial;
+        margin-left: auto;
+      }
+
+      li:nth-child(6) {
+        background-color: #FEDA6F;
+        padding: 1.25rem;
+        border-radius: 3.125rem;
+      }
+    }
+  }
+}
