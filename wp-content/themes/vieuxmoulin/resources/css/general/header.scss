@@ -69,7 +69,7 @@
       list-style-type: none;
       position: absolute;
       background: white;
-      top: -15rem;
+      top: 0;
       left: 0;
       right: 0;
       bottom: 0;
@@ -93,6 +93,20 @@
         background-color: #FEDA6F;
         padding: 1.25rem;
         border-radius: 3.125rem;
+        a{
+          &:hover,
+          &:focus{
+            color: black;
+            font-weight: 800;
+          }
+        }
+      }
+      a{
+        &:hover,
+        &:focus{
+          color: #2B5E99;
+          font-weight: 600;
+        }
       }
     }
   }
