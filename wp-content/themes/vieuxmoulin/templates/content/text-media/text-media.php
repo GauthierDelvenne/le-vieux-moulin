@@ -9,30 +9,30 @@
     <?php $class = get_sub_field('class') ?>
     
     
-    <section class="section_container_<?= $class !== '' ? $class : '' ?>">
-        <div class="text-mediacontent-container">
+    <section class="section_container section_container_<?= $class !== '' ? $class : '' ?>">
+        <div class="text-media__content-container">
             <?php if ($supline !== '' && isset($supline)): ?>
-                <p class="text-mediacontent-supline">
+                <p class="text-media__content-supline">
                     <?= $supline ?>
                 </p>
             <?php endif; ?>
             <?php if ($headline !== '' && isset($headline)): ?>
-                <h2 class="text-mediacontent-headline" aria-level="2">
+                <h2 class="text-media__content-headline" aria-level="2">
                     <?= $headline ?>
                 </h2>
             <?php endif; ?>
             <?php if ($subline !== '' && isset($subline)): ?>
-                <p class="text-mediacontent-subline">
+                <p class="text-media__content-subline">
                     <?= $subline ?>
                 </p>
             <?php endif; ?>
             <?php if ($text !== '' && isset($text)): ?>
-                <div class="text-mediacontent-text">
+                <div class="text-media__content-text">
                     <?= $text ?>
                 </div>
             <?php endif; ?>
             <?php if (!empty($cta)): ?>
-                <a class="text-mediacontent-link"
+                <a class="text-media__content-link"
                    href="<?= $cta['url'] ?>"
                    title="<?= $cta['title'] ?>">
                     <?= $cta['title'] ?>
@@ -40,7 +40,7 @@
             <?php endif; ?>
         </div>
         <?php if (!empty($image)): ?>
-            <div class="text-mediaposition text-mediaposition--<?= $media_position ?>">
+            <div class="text-media__position text-media__position--<?= $media_position ?>">
                 <?= responsive_image($image, ['classes' => 'text-media__image', 'lazy' => 'lazy']) ?>
             </div>
         <?php endif; ?>
