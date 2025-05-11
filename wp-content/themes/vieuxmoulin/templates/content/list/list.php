@@ -1,8 +1,9 @@
 <?php $headline = get_sub_field('headline'); ?>
 <?php $class = get_sub_field('class'); ?>
 
-<section class="section_container_<?= $class !== '' ? $class : '' ?>">
+<section class="list__section_container section_container_<?= $class !== '' ? $class : '' ?>">
     <div class="list-container">
+
         <?php if ($headline !== '' && isset($headline)) : ?>
             <h2 class="list-headline" aria-level="2">
                 <?= $headline; ?>
