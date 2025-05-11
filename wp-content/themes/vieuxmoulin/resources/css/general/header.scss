@@ -9,8 +9,24 @@
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   padding: 0.313rem 0;
+  &__logo{
+    position: relative;
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+    }
+  }
   .logo{
-    z-index: 1;
+    z-index: 2;
+    position: inherit;
   }
   &__nav {
     input {
@@ -41,6 +57,7 @@
         conic-gradient(from 90deg at 33% 33%, #0000 90deg, #000000 0) 100% 100%/60% 60% padding-box content-box;
         transform: rotate(45deg);
         opacity: 0;
+        z-index: 2;
       }
 
       &:checked::before {
@@ -54,6 +71,7 @@
       &:checked + ul {
         transform: unset;
         opacity: 1;
+        z-index: 1;
       }
       @include desktop-up{
         display: none;

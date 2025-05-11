@@ -25,9 +25,12 @@ require __DIR__ . '/resources/svg/sprite.php'
 ?>
 <header class="header">
     <h1 aria-level="1" class="hidden"><?= get_bloginfo('name') ?></h1>
+    <div class="header__logo">
+        <a href="/">Vers la page d’accueil</a>
     <svg class="logo" width="86" height="86" viewBox="0 0 86 86">
         <use xlink:href="#logo"></use>
     </svg>
+    </div>
     <nav class="header__nav" aria-label="Menu principal">
         <input type="checkbox" id="burger" role="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
         <ul id="menu" class="header__nav__container">
