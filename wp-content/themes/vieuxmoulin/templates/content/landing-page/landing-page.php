@@ -10,7 +10,7 @@
 <?php $class = get_sub_field('class') ?>
 
 
-<section class="section_container section_container_<?= $class !== '' ? $class : '' ?>">
+<section class="landing-page__section_container section_container_<?= $class !== '' ? $class : '' ?>">
     <div class="landing-page__content-container">
         <?php if ($supline !== '' && isset($supline)): ?>
             <p class="landing-page__content-supline">
@@ -41,9 +41,15 @@
         <?php endif; ?>
     </div>
     <div class="landing-page">
-        <svg class="darkblue">
-            <use xlink:href="#darkblue"></use>
-        </svg>
+        <?php if ($media_position === 'left') :?>
+            <svg class="lightblue" width="278" height="365" viewBox="0 0 278 365" >
+                <use xlink:href="#lightblue"></use>
+            </svg>
+        <?php elseif ($media_position === 'right') :?>
+            <svg class="darkblue" width="178" height="178" viewBox="0 0 178 178" >
+                <use xlink:href="#darkblue"></use>
+            </svg>
+        <?php endif ;?>
     <?php if (!empty($image)): ?>
         <div class="landing-page__position landing-page__position--<?= $media_position ?>">
             <?= responsive_image($image, ['classes' => 'landing-page__image', 'lazy' => 'lazy']) ?>
