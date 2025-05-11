@@ -1,4 +1,14 @@
-body{
+@import "../settings/breakpoints";
+
+body {
   background-color: #FAF6EC;
   font-size: 16px;
+}
+
+main {
+  padding: 0 3.125rem;
+  overflow-x: hidden;
+  @include desktop-xl-up {
+    padding: 0 9.375rem;
+  }
 }
