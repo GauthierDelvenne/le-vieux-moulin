@@ -1,0 +1,46 @@
+.media{
+&__section_container{
+  margin-top: 3.125rem;
+  text-align: center;
+  position: relative;
+  .yellow{
+    position: absolute;
+    z-index: -1;
+    left: -12rem;
+    bottom: -2rem;
+  }
+}
+  &-content{
+    display: flex;
+    gap: 1.25rem;
+    position: relative;
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+    }
+  }
+  &-headline{
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+  &-item{
+    .media-headline{
+      margin-bottom: 0.625rem;
+      font-size: 1.25rem;
+    }
+  }
+  &__image{
+   width: 140px;
+   height: 140px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+}
