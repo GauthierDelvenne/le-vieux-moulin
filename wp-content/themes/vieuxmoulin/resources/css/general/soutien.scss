@@ -1,0 +1,17 @@
+.section_container_tips{
+  position: relative;
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: -4.5rem;
+    left: -3.125rem;
+    width: 100vw;
+    height: 111%;
+    background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeau.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+  }
+}
