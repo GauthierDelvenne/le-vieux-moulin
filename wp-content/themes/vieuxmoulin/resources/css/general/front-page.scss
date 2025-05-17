@@ -6,11 +6,11 @@
   background-color: $yellow;
   margin-left: -3.125rem;
   margin-right: -3.125rem;
-  padding: 2rem 3.125rem;
+  padding: 3rem 3.125rem;
   @include desktop-xl-up {
     margin-left: -9.375rem;
     margin-right: -9.375rem;
-    padding: 2rem 9.375rem;
+    padding: 3rem 9.375rem;
   }
 
   &:after {
@@ -20,7 +20,7 @@
     background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg");
     height: 7%;
     left: -0.1rem;
-    bottom: 0;
+    bottom: -1px;
   }
   &:before{
     content: "";
@@ -29,7 +29,7 @@
     background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg");
     transform: rotate(180deg);
     height: 7%;
-    top: 0;
+    top: -1px;
     left: -0.1rem;
   }
 
