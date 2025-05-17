@@ -1,17 +1,36 @@
-.section_container_tips{
-  position: relative;
+@import "../settings/colors.scss";
+@import "../settings/breakpoints";
 
-  &:before{
+.section_container_tips {
+  position: relative;
+  background-color: $yellow;
+  margin-left: -3.125rem;
+  margin-right: -3.125rem;
+  padding: 2rem 3.125rem;
+  @include desktop-xl-up {
+    margin-left: -9.375rem;
+    margin-right: -9.375rem;
+    padding: 2rem 9.375rem;
+  }
+
+  &:after {
     content: "";
     position: absolute;
-    top: -4.5rem;
-    left: -3.125rem;
     width: 100vw;
-    height: 111%;
-    background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeau.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+    background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg");
+    height: 7%;
+    left: -0.1rem;
+    bottom: 0;
+  }
 
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg");
+    transform: rotate(180deg);
+    height: 7%;
+    top: 0;
+    left: -0.1rem;
   }
 }
