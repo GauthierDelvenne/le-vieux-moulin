@@ -1,3 +1,5 @@
+@import "../settings/colors.scss";
+@import "../settings/breakpoints";
 
 .list__section_container {
   display: flex;
@@ -9,7 +11,12 @@
     &-container {
 
     }
+    &-content{
+      display: flex;
+      justify-content: center;
+      gap: clamp(0.8rem, 5vw, 5rem);
 
+    }
     &-headline {
       font-size: 1.5rem;
       margin-bottom: 1.25rem;
@@ -18,6 +25,12 @@
     &-item {
       &:nth-of-type(2), &:nth-of-type(3) {
         display: none;
+      }
+
+      &:nth-of-type(2) {
+        @include tablet-up {
+          display: block;
+        }
       }
 
       .list-headline {
