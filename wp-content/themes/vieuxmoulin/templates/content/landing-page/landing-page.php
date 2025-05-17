@@ -39,6 +39,9 @@
                 <?= $cta['title'] ?>
             </a>
         <?php endif; ?>
+        <svg class="wave" width="232" height="176" viewBox="0 0 232 176" >
+            <use xlink:href="#wave"></use>
+        </svg>
     </div>
     <div class="landing-page">
         <?php if ($media_position === 'left') :?>
