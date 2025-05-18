@@ -9,7 +9,9 @@
     flex-direction: row;
     gap: clamp(0.8rem, 5vw, 5rem);
     justify-content: center;
-
+  }
+  @include desktop-xl-up {
+    margin-top: 6.25rem;
   }
 }
 
@@ -39,6 +41,7 @@
 
     &-container {
       position: relative;
+
       .wave {
         display: none;
         @include tablet-up {
@@ -50,25 +53,42 @@
 
     &-supline {
       font-size: 1.5rem;
+      @include desktop-xl-up {
+        font-size: 2.25rem;
+      }
+
     }
 
     &-headline {
       font-size: 1.5rem;
-
+      @include desktop-xl-up {
+        font-size: 2.25rem;
+      }
     }
 
     &-subline {
       font-size: 1.5rem;
       margin-bottom: 1.25rem;
+      @include desktop-xl-up {
+        font-size: 2.25rem;
+      }
     }
 
     &-text {
       margin-bottom: 1.25rem;
       max-width: 360px;
+      @include desktop-xl-up {
+        font-size: 1.25rem;
+      }
     }
-    &-second_text{
-      @include tablet-up{
-          width: 360px;
+
+    &-second_text {
+      @include tablet-up {
+        width: clamp(360px, 50vw, 540px);
+      }
+      @include desktop-xl-up {
+        width: 540px;
+        font-size: 1.25rem;
       }
     }
   }
@@ -81,8 +101,12 @@
     border-radius: 50px;
     margin-bottom: 1.25rem;
     @include tablet-up {
-      width: 360px;
-      height: 216px;
+      width: clamp(360px, 50vw, 540px);
+      height: clamp(216px, calc(50vw * 0.6), 324px);
+    }
+    @include desktop-xl-up {
+      width: 540px;
+      height: 324px;
     }
   }
 
