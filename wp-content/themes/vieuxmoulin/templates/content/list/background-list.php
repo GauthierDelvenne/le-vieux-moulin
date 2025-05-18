@@ -10,7 +10,13 @@
                 <?= $headline; ?>
             </h2>
         <?php endif; ?>
-
+        <?php if ($text !== '' && isset($text)): ?>
+            <div class="background-list-text">
+                <p>
+                    <?= $text ?>
+                </p>
+            </div>
+        <?php endif; ?>
         <?php if (have_rows('background-list_content')) : ?>
             <div class="background-list-content">
                 <?php while (have_rows('background-list_content')) : the_row(); ?>
@@ -32,7 +38,9 @@
                         <?php endif; ?>
                         <?php if ($text !== '' && isset($text)): ?>
                             <div class="background-list-text">
-                                <?= $text ?>
+                                <p>
+                                    <?= $text ?>
+                                </p>
                             </div>
                         <?php endif; ?>
                     </article>
