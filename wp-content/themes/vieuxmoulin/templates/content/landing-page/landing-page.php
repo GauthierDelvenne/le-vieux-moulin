@@ -45,11 +45,11 @@
     </div>
     <div class="landing-page">
         <?php if ($media_position === 'left') :?>
-            <svg class="lightblue" width="278" height="365" viewBox="0 0 278 365" >
+            <svg class="lightblue" width="326" height="390" viewBox="0 0 326 390" >
                 <use xlink:href="#lightblue"></use>
             </svg>
         <?php elseif ($media_position === 'right') :?>
-            <svg class="darkblue" width="178" height="178" viewBox="0 0 178 178" >
+            <svg class="darkblue" width="226" height="263" viewBox="0 0 226 263" >
                 <use xlink:href="#darkblue"></use>
             </svg>
         <?php endif ;?>

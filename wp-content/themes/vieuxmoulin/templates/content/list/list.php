@@ -12,8 +12,10 @@
 
         <?php if (have_rows('list_content')) : ?>
             <div class="list-content">
-                <?php while (have_rows('list_content')) : the_row(); ?>
+                <?php $i = 0;
+                while (have_rows('list_content')) : the_row(); ?>
                     <?php
+                    $i++;
                     $link = get_sub_field('link');
                     $image = get_sub_field('image');
                     $text = get_sub_field('text');
@@ -29,6 +31,11 @@
                         <?php endif; ?>
                         <?php if (!empty($image)): ?>
                             <div class="list-media">
+                                <?php if ($i === 2): ?>
+                                    <svg class="circle" width="239" height="244" viewBox="0 0 239 244">
+                                        <use xlink:href="#circle"></use>
+                                    </svg>
+                                <?php endif; ?>
                                 <?= responsive_image($image, ['classes' => 'list__image', 'lazy' => 'lazy']) ?>
                             </div>
                         <?php endif; ?>

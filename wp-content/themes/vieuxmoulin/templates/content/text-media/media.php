@@ -3,7 +3,7 @@
 
 <section class="media__section_container section_container_<?= $class !== '' ? $class : '' ?>">
     <div class="media-container">
-        <svg class="yellow" width="298" height="203" viewBox="0 0 298 203">
+        <svg class="yellow" width="300" height="300" viewBox="0 0 300 300">
             <use xlink:href="#yellow"></use>
         </svg>
         <?php if ($headline !== '' && isset($headline)) : ?>

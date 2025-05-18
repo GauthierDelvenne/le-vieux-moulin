@@ -18,16 +18,30 @@
 
     .lightblue, .yellow {
       position: absolute;
-      left: -3.5rem;
+      left: -7rem;
       top: -2rem;
       z-index: -1;
     }
+    .yellow{
+      left: -5rem;
+      bottom: -4rem;
+      top: unset;
+    }
 
-    .darkblue, .green {
+    .darkblue, .green, .light {
       position: absolute;
-      right: -3.5rem;
-      top: -2rem;
+      right: -5rem;
+      top: 1rem;
       z-index: -1;
+    }
+    .darkblue{
+      transform: rotate(20deg);
+      right: -4.5rem;
+      top: -3.3rem;
+    }
+    .light{
+      right: -3rem;
+      top: -3rem;
     }
 
     &--left {
