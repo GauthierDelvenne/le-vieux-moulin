@@ -11,13 +11,17 @@
   padding: 3.125rem 2rem;
   margin-top: 1.5rem;
 
-  @include tablet-up{
+
+  @include tablet-up {
     gap: clamp(1.25rem, 2vw, 3.125rem);
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
   }
-  &__logo{
+
+  &__logo {
     position: relative;
+
     a {
       display: block;
       position: absolute;
@@ -30,28 +34,35 @@
       z-index: 1;
       opacity: 0;
     }
-  .logo{
-    @include tablet-up {
-      width: clamp(5.375rem, 10vw, 14.0625rem);
-      height: clamp(5.375rem, 10vw, 14.0625rem);
+
+    .logo {
+      @include tablet-up {
+        width: clamp(5.375rem, 10vw, 14.0625rem);
+        height: clamp(5.375rem, 10vw, 14.0625rem);
+      }
     }
-  }
 
   }
-  h2{
+
+  h2 {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
   }
-  ul{
+
+  ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    a{
+    a {
       &:hover,
-      &:focus{
+      &:focus {
         color: #2B5E99;
         font-weight: 600;
       }
     }
   }
+}
+ul.footer__partenaire__container{
+  flex-direction: row;
+  gap: 1rem;
 }
