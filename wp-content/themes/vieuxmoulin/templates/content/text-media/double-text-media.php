@@ -7,9 +7,14 @@
     <div class="double-text-media-container">
 
         <?php if ($headline !== '' && isset($headline)) : ?>
-            <h2 class="double-text-media-headline" aria-level="2">
-                <?= $headline; ?>
-            </h2>
+            <div class="double-text-media-headliners">
+                <h2 class="double-text-media-headline" aria-level="2">
+                    <?= $headline; ?>
+                </h2>
+                <svg class="underline" width="366" height="70" viewBox="0 0 366 70">
+                    <use xlink:href="#underline"></use>
+                </svg>
+            </div>
         <?php endif; ?>
 
 
