@@ -7,7 +7,7 @@
   text-align: center;
   @include tablet-up {
     grid-template-columns: auto auto;
-    grid-template-rows: 40px auto;
+    grid-template-rows: 50px auto;
     column-gap: clamp(0.8rem, 5vw, 5rem);
   }
 }
@@ -60,12 +60,18 @@
       font-size: 1.5rem;
       order: -1;
       margin-bottom: 1.25rem;
+      @include tablet-up {
 
+        text-align: start;
+      }
     }
 
     &-text {
       margin-bottom: 1.25rem;
-      text-align: start;
+      @include tablet-up {
+
+        text-align: start;
+      }
     }
   }
 
