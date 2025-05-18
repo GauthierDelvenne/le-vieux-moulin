@@ -8,8 +8,17 @@
   text-align: center;
 
   .list {
-    &-container {
-
+    &-media {
+    position: relative;
+      .circle{
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+      }
+      picture{
+        z-index: 1;
+        position: relative;
+      }
     }
     &-content{
       display: flex;
@@ -49,6 +58,7 @@
       object-fit: cover;
       border-radius: 50px;
       margin-bottom: 1.25rem;
+
     }
   }
 
