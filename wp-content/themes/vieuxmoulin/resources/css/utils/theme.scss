@@ -1,7 +1,7 @@
+@import "../settings/colors.scss";
 @import "../settings/breakpoints";
-
 body {
-  background-color: #FAF6EC;
+  background-color: $background;
   font-size: 16px;
 }
 

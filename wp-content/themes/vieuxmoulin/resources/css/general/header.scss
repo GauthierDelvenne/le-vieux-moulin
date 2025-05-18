@@ -1,12 +1,12 @@
+@import "../settings/colors.scss";
 @import "../settings/breakpoints";
-
 
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: white;
+  background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   padding: 0.313rem 0;
   &__logo{
@@ -86,7 +86,7 @@
       padding: 0;
       list-style-type: none;
       position: absolute;
-      background: white;
+      background: $white;
       top: 0;
       left: 0;
       right: 0;
@@ -108,13 +108,13 @@
       }
 
       li:nth-child(6) {
-        background-color: #FEDA6F;
+        background-color: $yellow;
         padding: 1.25rem;
         border-radius: 3.125rem;
         a{
           &:hover,
           &:focus{
-            color: black;
+            color: $black;
             font-weight: 800;
           }
         }
@@ -122,7 +122,7 @@
       a{
         &:hover,
         &:focus{
-          color: #2B5E99;
+          color: $darkblue;
           font-weight: 600;
         }
       }

@@ -1,5 +1,5 @@
+@import "../settings/colors.scss";
 @import "../settings/breakpoints";
-
 .footer {
   background-color: white;
   display: flex;
@@ -56,7 +56,7 @@
     a {
       &:hover,
       &:focus {
-        color: #2B5E99;
+        color: $darkblue;
         font-weight: 600;
       }
     }
