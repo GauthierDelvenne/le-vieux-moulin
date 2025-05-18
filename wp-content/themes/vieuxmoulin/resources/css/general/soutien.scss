@@ -18,9 +18,13 @@
     position: absolute;
     width: 100vw;
     background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg");
-    height: 7%;
+    height: 2%;
     left: -0.1rem;
     bottom: 0;
+    @include tablet-up {
+      height: 4%;
+
+    }
   }
 
   &:before {
@@ -29,8 +33,12 @@
     width: 100vw;
     background-image: url("/wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg");
     transform: rotate(180deg);
-    height: 7%;
+    height: 2%;
     top: 0;
     left: -0.1rem;
+    @include tablet-up {
+      height: 4%;
+
+    }
   }
 }
