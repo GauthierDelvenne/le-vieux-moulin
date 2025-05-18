@@ -12,7 +12,7 @@
     position: relative;
       .circle{
         position: absolute;
-        top: -2rem;
+        top: -1rem;
         left: -2rem;
       }
       picture{
@@ -29,6 +29,9 @@
     &-headline {
       font-size: 1.5rem;
       margin-bottom: 1.25rem;
+      @include desktop-xl-up {
+        font-size: 2.25rem;
+      }
     }
 
     &-item {
@@ -42,12 +45,21 @@
         }
       }
 
+      &:nth-of-type(3) {
+        @include desktop-xl-up {
+          display: block;
+        }
+      }
+
       .list-headline {
         text-transform: uppercase;
       }
 
       .list-headline, .list-text {
         font-size: 1rem;
+        @include desktop-xl-up{
+          font-size: 1.25rem;
+        }
       }
 
     }
