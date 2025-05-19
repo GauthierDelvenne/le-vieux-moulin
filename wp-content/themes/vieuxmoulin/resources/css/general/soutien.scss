@@ -23,7 +23,10 @@
     bottom: 0;
     @include tablet-up {
       height: 4%;
-
+    }
+    @include desktop-up {
+      height: 3%;
+      bottom: -1px;
     }
   }
 
@@ -38,7 +41,10 @@
     left: -0.1rem;
     @include tablet-up {
       height: 4%;
-
+    }
+    @include desktop-up {
+      height: 3%;
+      top: -1px;
     }
   }
 }
