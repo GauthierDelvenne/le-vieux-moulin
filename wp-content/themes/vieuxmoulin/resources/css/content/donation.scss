@@ -2,19 +2,33 @@
 @import "../settings/breakpoints";
 
 .donation__section_container {
-  margin-top: 3.125rem;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  margin-top: clamp(3.125rem, 5vw, 6.25rem);
+  @include desktop-xl-up {
+    margin-top: 6.25rem;
+  }
 
   .donation {
     &-headline {
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
       margin-bottom: 1.25rem;
+      @include desktop-xl-up {
+        font-size: 2.25rem;
+      }
     }
-    &__content-text{
-      margin-bottom: 1.25rem;
 
+    &__content-text {
+      margin-bottom: 1.25rem;
+      max-width: 600px;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      @include desktop-xl-up {
+        font-size: 1.25rem;
+      }
     }
-    &-content{
+
+    &-content {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -22,8 +36,10 @@
       gap: 1.25rem;
 
     }
-    &-item{
+
+    &-item {
       position: relative;
+
       a {
         display: block;
         position: absolute;
@@ -37,9 +53,10 @@
         opacity: 0;
       }
     }
-    &__image{
-      width: 120px;
-      height: 120px;
+
+    &__image {
+      width: clamp(120px, 15vw, 200px);
+      height: clamp(120px, 15vw, 200px);
       object-fit: cover;
       border-radius: 50px;
     }
