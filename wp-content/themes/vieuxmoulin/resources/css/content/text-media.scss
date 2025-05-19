@@ -3,7 +3,7 @@
 
 .text-media__section_container {
   display: grid;
-  margin-top: 3.125rem;
+  margin-top: clamp(3.125rem, 5vw, 6.25rem);
   text-align: center;
   justify-content: center;
 
@@ -11,6 +11,9 @@
     grid-template-columns: auto auto;
     grid-template-rows: 50px auto;
     column-gap: clamp(0.8rem, 5vw, 5rem);
+  }
+  @include desktop-xl-up {
+    margin-top: 6.25rem;
   }
 }
 
@@ -102,11 +105,12 @@
   }
 
   &__image {
-    width: 300px;
-    height: 300px;
+    width: clamp(300px, 25vw, 400px);
+    height: clamp(300px, 25vw, 400px);
     object-fit: cover;
     border-radius: 50px;
     margin-bottom: 1.25rem;
+
   }
 
   &__video {
