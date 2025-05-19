@@ -5,6 +5,8 @@
   display: grid;
   margin-top: 3.125rem;
   text-align: center;
+  justify-content: center;
+
   @include tablet-up {
     grid-template-columns: auto auto;
     grid-template-rows: 50px auto;
@@ -22,7 +24,8 @@
       top: -2rem;
       z-index: -1;
     }
-    .yellow{
+
+    .yellow {
       left: -5rem;
       bottom: -4rem;
       top: unset;
@@ -34,12 +37,14 @@
       top: 1rem;
       z-index: -1;
     }
-    .darkblue{
+
+    .darkblue {
       transform: rotate(20deg);
       right: -4.5rem;
       top: -3.3rem;
     }
-    .light{
+
+    .light {
       right: -3rem;
       top: -3rem;
     }
@@ -71,20 +76,27 @@
     }
 
     &-headline {
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
       order: -1;
       margin-bottom: 1.25rem;
       @include tablet-up {
-
         text-align: start;
+      }
+      @include desktop-xl-up {
+        font-size: 2.25rem;
       }
     }
 
     &-text {
-      margin-bottom: 1.25rem;
-      @include tablet-up {
+      font-size: clamp(1rem, 2vw, 1.25rem);
 
+      margin-bottom: 1.25rem;
+      max-width: 600px;
+      @include tablet-up {
         text-align: start;
+      }
+      @include desktop-xl-up {
+        font-size: 1.25rem;
       }
     }
   }
