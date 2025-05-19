@@ -3,9 +3,7 @@
 
 <section class="media__section_container section_container_<?= $class !== '' ? $class : '' ?>">
     <div class="media-container">
-        <svg class="yellow" width="300" height="300" viewBox="0 0 300 300">
-            <use xlink:href="#yellow"></use>
-        </svg>
+
         <?php if ($headline !== '' && isset($headline)) : ?>
             <h2 class="media-headline" aria-level="2">
                 <?= $headline; ?>

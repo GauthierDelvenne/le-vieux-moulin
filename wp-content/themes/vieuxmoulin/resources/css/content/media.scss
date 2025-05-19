@@ -1,21 +1,20 @@
+@import "../settings/colors.scss";
+@import "../settings/breakpoints";
 .media{
 &__section_container{
-  margin-top: 3.125rem;
+  margin-top: clamp(3.125rem, 5vw, 6.25rem);
   text-align: center;
   position: relative;
-  .yellow{
-    position: absolute;
-    z-index: -1;
-    left: -12rem;
-    bottom: -2rem;
+  @include desktop-xl-up {
+    margin-top: 6.25rem;
   }
+
 }
   &-content{
     display: flex;
     gap: 1.25rem;
     position: relative;
     justify-content: center;
-
     a {
       display: block;
       position: absolute;
@@ -30,18 +29,24 @@
     }
   }
   &-headline{
-    font-size: 1.75rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: clamp(1.25rem, 3vw, 2rem);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    @include desktop-xl-up {
+      font-size: 2.5rem;
+    }
   }
   &-item{
     .media-headline{
       margin-bottom: 0.625rem;
-      font-size: 1.25rem;
+      font-size: clamp(1.25rem, 3vw, 2rem);
+      @include desktop-xl-up {
+        font-size: 2rem;
+      }
     }
   }
   &__image{
-   width: 140px;
-   height: 140px;
+    width: clamp(140px, 17vw, 280px);
+    height: clamp(140px, 17vw, 280px);
     object-fit: cover;
     border-radius: 50px;
   }
