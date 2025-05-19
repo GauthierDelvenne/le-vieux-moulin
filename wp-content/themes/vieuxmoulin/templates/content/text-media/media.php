@@ -21,9 +21,8 @@
                     <div class="media-item">
                         <?php if (!empty($link)): ?>
                             <a class="list-link"
-                               href="<?= $link['url'] ?>"
-                               title="<?= $link['title'] ?>">
-                                <?= $link['title'] ?>
+                               href="#<?= $link; ?>">
+                               >
                             </a>
                         <?php endif; ?>
                         <?php if ($headline !== '' && isset($headline)) : ?>

@@ -3,7 +3,7 @@
 <?php $block1 = get_sub_field('double-text-media_content-n1'); ?>
 <?php $block2 = get_sub_field('double-text-media_content-n2'); ?>
 
-<section class="double-text-media__section_container section_container_<?= $class !== '' ? $class : '' ?>">
+<section class="double-text-media__section_container section_container_<?= $class !== '' ? $class : '' ?>" >
     <div class="double-text-media-container">
 
         <?php if ($headline !== '' && isset($headline)) : ?>
@@ -35,7 +35,7 @@
 
                 ?>
                 <div class="double-text-media-content">
-                    <section class="text-media__section_container section_container_<?= esc_attr($class) ?>">
+                    <section class="text-media__section_container section_container_<?= esc_attr($class) ?>" id="<?= $class !== '' ? $class : '' ?>">
                         <?php if (!empty($headline)) : ?>
                             <h3 class="text-media__content-headline" aria-level="3">
                                 <?= esc_html($headline) ?>
