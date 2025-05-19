@@ -4,7 +4,7 @@
 .landing-page__section_container {
   display: flex;
   flex-direction: column;
-  margin-top: 3.125rem;
+  margin-top: clamp(3.125rem, 5vw, 6.25rem);
   @include tablet-up {
     flex-direction: row;
     gap: clamp(0.8rem, 5vw, 5rem);
@@ -85,7 +85,7 @@
 
     &-second_text {
       font-size: clamp(1rem, 2vw, 1.25rem);
-      
+
       @include tablet-up {
         width: clamp(360px, 50vw, 540px);
       }
