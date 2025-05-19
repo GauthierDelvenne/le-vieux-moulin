@@ -52,7 +52,7 @@
     }
 
     &-supline {
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
       @include desktop-xl-up {
         font-size: 2.25rem;
       }
@@ -60,14 +60,14 @@
     }
 
     &-headline {
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
       @include desktop-xl-up {
         font-size: 2.25rem;
       }
     }
 
     &-subline {
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
       margin-bottom: 1.25rem;
       @include desktop-xl-up {
         font-size: 2.25rem;
@@ -75,6 +75,7 @@
     }
 
     &-text {
+      font-size: clamp(1rem, 2vw, 1.25rem);
       margin-bottom: 1.25rem;
       max-width: 360px;
       @include desktop-xl-up {
@@ -83,6 +84,8 @@
     }
 
     &-second_text {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      
       @include tablet-up {
         width: clamp(360px, 50vw, 540px);
       }
