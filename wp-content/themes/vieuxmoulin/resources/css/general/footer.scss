@@ -9,8 +9,11 @@
   text-align: center;
   gap: 3.125rem;
   padding: 3.125rem 2rem;
-  margin-top: 1.5rem;
+  margin-top: clamp(3.125rem, 5vw, 6.25rem);
 
+  @include desktop-xl-up {
+    margin-top: 6.25rem;
+  }
 
   @include tablet-up {
     gap: clamp(1.25rem, 2vw, 3.125rem);
