@@ -48,3 +48,20 @@
     }
   }
 }
+
+.section_container_donation {
+  .text-media__content-text {
+    p {
+      &:nth-of-type(2), &:nth-of-type(4), &:nth-of-type(5) {
+        margin-bottom: 0.8rem;
+      }
+
+      &:nth-of-type(6) {
+        strong {
+          font-size: clamp(1.5rem, 3vw, 2.25rem);
+        }
+      }
+    }
+  }
+}
+
