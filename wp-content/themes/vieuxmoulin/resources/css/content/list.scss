@@ -9,25 +9,30 @@
   @include desktop-xl-up {
     margin-top: 6.25rem;
   }
+
   .list {
     &-media {
-    position: relative;
-      .circle{
+      position: relative;
+
+      .circle {
         position: absolute;
         top: -1rem;
         left: -2rem;
       }
-      picture{
+
+      picture {
         z-index: 1;
         position: relative;
       }
     }
-    &-content{
+
+    &-content {
       display: flex;
       justify-content: center;
       gap: clamp(0.8rem, 5vw, 5rem);
 
     }
+
     &-headline {
       font-size: clamp(1.5rem, 3vw, 2.25rem);
       margin-bottom: 1.25rem;
@@ -37,6 +42,21 @@
     }
 
     &-item {
+      position: relative;
+
+      .list-link {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        opacity: 0;
+      }
+
       &:nth-of-type(2), &:nth-of-type(3) {
         display: none;
       }
@@ -59,7 +79,7 @@
 
       .list-headline, .list-text {
         font-size: clamp(1rem, 2vw, 1.25rem);
-        @include desktop-xl-up{
+        @include desktop-xl-up {
           font-size: 1.25rem;
         }
       }

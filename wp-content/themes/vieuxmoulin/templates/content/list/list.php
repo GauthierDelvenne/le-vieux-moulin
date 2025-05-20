@@ -26,7 +26,9 @@
                             <a class="list-link"
                                href="<?= $link['url'] ?>"
                                title="<?= $link['title'] ?>">
+                                <span class="hidden">
                                 <?= $link['title'] ?>
+                                </span>
                             </a>
                         <?php endif; ?>
                         <?php if (!empty($image)): ?>
