@@ -8,7 +8,7 @@
   justify-content: space-around;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
-  padding: 0.313rem 0;
+  padding: clamp(0.313rem, 1vw, 2.5rem) 0;
   &__logo{
     position: relative;
     a {
@@ -82,9 +82,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
       position: absolute;
       background: $white;
       top: 0;
@@ -103,10 +100,10 @@
         opacity: 1;
         transform: unset;
         position: initial;
-        flex-flow: initial;
-        margin-left: auto;
       }
-
+      li{
+        font-size: clamp(1rem, 1.5vw, 2.5rem);
+      }
       li:nth-child(6) {
         background-color: $yellow;
         padding: 1.25rem;
@@ -116,6 +113,7 @@
           &:focus{
             color: $black;
             font-weight: 800;
+
           }
         }
       }
