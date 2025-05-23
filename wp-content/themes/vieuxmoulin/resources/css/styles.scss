@@ -1,30 +1,17 @@
 @use 'general/header';
 @use 'general/footer';
 @use 'general/soutien';
+@use 'general/front-page';
 @use 'content/text-media';
 @use 'content/double-text-media';
 @use 'content/media';
 @use 'content/landing-page';
 @use 'content/list';
 @use 'content/background-list';
+@use 'content/button';
+@use 'content/donation';
 @use 'utils/reset';
 @use 'utils/hidden';
 @use 'utils/theme';
-.repeater-vertical {
-  .acf-table thead {
-    display: none; /* Cache les en-têtes de colonnes */
-  }
-
-  .acf-table tbody {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .acf-table tbody tr {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Prendre toute la largeur de l'espace */
-  }
-
-
-}
+@use 'utils/codebox';
+@import "settings/fonts";

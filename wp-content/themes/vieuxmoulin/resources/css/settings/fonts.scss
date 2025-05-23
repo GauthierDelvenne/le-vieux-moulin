@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'playfair';
+  src: url('/wp-content/themes/vieuxmoulin/resources/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+  url('/wp-content/themes/vieuxmoulin/resources/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'mukta';
+  src: url('/wp-content/themes/vieuxmoulin/resources/fonts/mukta-regular-webfont.woff2') format('woff2'),
+  url('/wp-content/themes/vieuxmoulin/resources/fonts/mukta-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'mukta';
+  src: url('/wp-content/themes/vieuxmoulin/resources/fonts/mukta-extrabold-webfont.woff2') format('woff2'),
+  url('/wp-content/themes/vieuxmoulin/resources/fonts/mukta-extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+}
+
+$headFont: 'playfair', serif;
+$textFont: 'mukta', sans-serif;
+
+body{
+  font-family: $textFont;
+  line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headFont;
+  line-height: normal;
+}
+
+
