@@ -19,22 +19,22 @@ function getPathFromUrl($url) {
     <?php endif; ?>
     <div class="button-container">
         <?php if (!empty($button1)): ?>
-            <p class="button-button1">
+            <div class="button-button1">
                 <a class="button__content-link <?= ($current_path == getPathFromUrl($button1['url'])) ? 'active' : 'inactive' ?>"
                    href="<?= $button1['url'] ?>"
                    title="<?= $button1['title'] ?>">
                     <?= $button1['title'] ?>
                 </a>
-            </p>
+            </div>
         <?php endif; ?>
         <?php if (!empty($button2)): ?>
-            <p class="button-button2">
+            <div class="button-button2">
                 <a class="button__content-link <?= ($current_path == getPathFromUrl($button2['url'])) ? 'active' : 'inactive' ?>"
                    href="<?= $button2['url'] ?>"
                    title="<?= $button2['title'] ?>">
                     <?= $button2['title'] ?>
                 </a>
-            </p>
+            </div>
         <?php endif; ?>
     </div>
 </section>
