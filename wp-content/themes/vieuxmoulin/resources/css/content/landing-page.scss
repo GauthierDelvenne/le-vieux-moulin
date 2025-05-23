@@ -1,5 +1,6 @@
 @import "../settings/colors.scss";
 @import "../settings/breakpoints";
+@import "../settings/fonts";
 
 .landing-page__section_container {
   display: flex;
@@ -52,6 +53,7 @@
     }
 
     &-supline {
+      font-family: $headFont;
       font-size: clamp(1.5rem, 3vw, 2.25rem);
       @include desktop-xl-up {
         font-size: 2.25rem;
@@ -67,6 +69,7 @@
     }
 
     &-subline {
+      font-family: $headFont;
       font-size: clamp(1.5rem, 3vw, 2.25rem);
       margin-bottom: 1.25rem;
       @include desktop-xl-up {
