@@ -62,33 +62,33 @@
       }
 
       &:nth-of-type(2) {
+        @include tablet {
+          display: block;
+        }
+      }
+
+      &:nth-of-type(2), &:nth-of-type(3) {
         @include tablet-up {
           display: block;
         }
       }
 
-      &:nth-of-type(3) {
-        @include desktop-xl-up {
-          display: block;
-        }
-      }
-
       .list-headline {
-        text-transform: uppercase;
+        text-transform: capitalize;
       }
 
       .list-headline, .list-text {
-        font-size: clamp(1rem, 2vw, 1.25rem);
+        font-size: clamp(1rem, 2vw, 1.15rem);
         @include desktop-xl-up {
-          font-size: 1.25rem;
+          font-size: 1.15rem;
         }
       }
 
     }
 
     &__image {
-      width: clamp(270px, 23vw, 370px);
-      height: clamp(270px, 23vw, 370px);
+      width: clamp(200px, 15vw, 300px);
+      height: clamp(200px, 15vw, 300px);
       object-fit: cover;
       border-radius: 50px;
       margin-bottom: 1.25rem;
