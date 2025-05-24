@@ -11,3 +11,5 @@ include_once __DIR__ . '/functions/vite-manifest.php';
 include_once __DIR__ . '/functions/srcset-create.php';
 include_once __DIR__ . '/functions/navigation.php';
 include_once __DIR__ . '/functions/project-post.php';
+include_once __DIR__ . '/functions/contact-post.php';
+include_once __DIR__ . '/functions/verify_contact.php';

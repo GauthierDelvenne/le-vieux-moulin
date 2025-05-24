@@ -1,0 +1,105 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/breakpoints";
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: clamp(3.125rem, 5vw, 6.25rem);
+  @include desktop-xl-up {
+    margin-top: 6.25rem;
+  }
+
+  .green, .lightblue {
+    position: absolute;
+  }
+
+  .lightblue {
+    position: absolute;
+    left: -7rem;
+    bottom: -2rem;
+    z-index: -1;
+  }
+
+  .green {
+    position: absolute;
+    right: -5rem;
+    top: 1rem;
+    z-index: -1;
+  }
+}
+
+.form {
+  padding-block: clamp(1.6rem, 1.6rem + 0.5vw, 2.4rem);
+  padding-inline: clamp(1.25rem, 1.25rem + 1vw, 3rem);
+
+  background-color: $yellow;
+  border-radius: 3.125rem;
+
+  &_title {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+
+  &_fields {
+    .field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+      margin-bottom: 2rem;
+      position: relative;
+
+      label {
+        font-family: $headFont;
+
+      }
+
+      input, textarea {
+        width: 70vw;
+        max-width: 450px;
+        padding: 0.8rem;
+        border-radius: 0.4rem;
+        font-family: $textFont;
+        border: none;
+        resize: none;
+        transition: transform 0.3s ease;
+
+        &:hover, &:focus {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+
+  &_submit {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 0.4rem;
+      font-family: $textFont;
+      border: none;
+      background-color: $black;
+      color: $white;
+      transition: transform 0.3s ease;
+
+      &:hover, &:focus {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+
+.field_success {
+  text-align: center;
+}
