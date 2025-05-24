@@ -43,7 +43,12 @@
 
     &-item {
       position: relative;
+      transition: transform 0.3s ease;
 
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
       .list-link {
         display: block;
         position: absolute;
@@ -92,7 +97,6 @@
       object-fit: cover;
       border-radius: 50px;
       margin-bottom: 1.25rem;
-
     }
   }
 

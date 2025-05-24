@@ -70,14 +70,6 @@
   }
 
   &__content {
-    &-container {
-
-    }
-
-    &-container-text {
-
-    }
-
     &-headline {
       font-size: clamp(1.5rem, 3vw, 2.25rem);
       order: -1;
@@ -100,6 +92,13 @@
       }
       @include desktop-xl-up {
         font-size: 1.25rem;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $darkblue;
+        }
       }
     }
   }

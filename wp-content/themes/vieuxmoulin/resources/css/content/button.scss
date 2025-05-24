@@ -27,12 +27,14 @@
       align-items: center;
       color: $white;
       font-size: clamp(1rem, 2vw, 1.25rem);
+      transition: transform 0.3s ease;
+
       @include desktop-xl-up {
         font-size: 1.25rem;
       }
 
       &:hover, &:focus {
-        padding: 1.2rem;
+        transform: scale(1.05);
         background-color: #033265;
       }
 
