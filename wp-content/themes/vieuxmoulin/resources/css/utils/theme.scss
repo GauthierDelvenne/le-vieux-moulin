@@ -8,6 +8,7 @@ body {
 main {
   padding: 0 3.125rem;
   overflow-x: hidden;
+  overflow-y: hidden;
   @include desktop-xl-up {
     padding: 0 9.375rem;
   }
