@@ -36,7 +36,7 @@
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     @include tablet-up {
       width: 33%;
     }
