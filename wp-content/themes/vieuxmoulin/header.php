@@ -9,13 +9,14 @@
     <meta name="author" content="Delvenne Gauthier">
     <meta name="keywords" content="SRG, Vieux moulin, enfants, Service résidentiel généraux, foyer, don, bénévole">
     <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
     <link rel="stylesheet" type="text/css" href="<?= vieuxmoulin_asset('css'); ?>">
-        <link rel="icon"
-              type="image/png"
-              sizes="32x32"
-              href="/wp-content/themes/vieuxmoulin/resources/img/LogoVM.png">
+    <link rel="icon" type="image/png" href="/wp-content/themes/vieuxmoulin/resources/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/wp-content/themes/vieuxmoulin/resources/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/wp-content/themes/vieuxmoulin/resources/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/vieuxmoulin/resources/img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="VM" />
+    <link rel="manifest" href="/wp-content/themes/vieuxmoulin/resources/img/favicon/site.webmanifest" />
     <script src="<?= vieuxmoulin_asset('js') ?>" defer></script>
     <?php wp_head(); ?>
 </head>

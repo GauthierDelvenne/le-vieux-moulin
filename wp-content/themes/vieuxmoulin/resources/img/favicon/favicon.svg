@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1599)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(10.152284263959391,0,0,10.152284263959391,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="98.5" height="98.5"><svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 98.5 98.5">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <polyline id="Border" points="74.1 87.2 3.1 87.2 3.1 8.5 74.1 8.5 74.1 19" style="fill: none; stroke: #ae897e; stroke-miterlimit: 10; stroke-width: .9px;"></polyline>
+  <g id="VM">
+    <polygon points="13.3 70.1 6.4 70.1 13.7 14.5 17.4 14.5 34.8 57.7 54.1 14.5 59.7 14.5 66 70.1 55.7 70.1 52.3 32.6 37.7 64.5 31.7 66.8 16.7 33.3 13.3 70.1"></polygon>
+    <polygon points="19.8 14.5 25.2 14.5 34.8 40.3 46.4 14.5 51.5 14.5 34.8 50.6 19.8 14.5"></polygon>
+  </g>
+  <g id="S.R.G.">
+    <path d="M9,77.1c0-.2-.2-.3-.3-.4-.1,0-.3-.2-.7-.2-.6,0-1,.4-1,.9s0,.4.2.5c.2.2.4.3.6.4l.6.2c.3.2.7.3.9.6s.4.6.4,1.1c0,1.1-.8,1.8-1.8,1.8s-.9,0-1.3-.5c-.3-.3-.5-.7-.5-1l.6-.2c0,.3.2.6.4.7.3.3.5.3.8.3.8,0,1.2-.6,1.2-1.2s0-.5-.3-.7c-.2-.2-.4-.3-.7-.4l-.5-.2c-.2-.1-.5-.2-.8-.5-.3-.2-.4-.5-.4-1,0-.9.7-1.5,1.6-1.5s.6,0,.9.3c.2.2.4.4.6.7l-.5.3Z"></path>
+    <path d="M10.7,81c.2,0,.4.2.4.4s-.2.4-.4.4-.4-.2-.4-.4.2-.4.4-.4Z"></path>
+    <path d="M13,75.9c.4,0,1,0,1.4.3.3.2.6.7.6,1.3,0,.9-.6,1.6-1.5,1.6l1.9,2.6h-.8l-1.8-2.6h-.2v2.6h-.6v-5.8h.9ZM12.8,78.7h.4c.8,0,1.3-.4,1.3-1.1s0-.7-.5-.9c-.3-.2-.6-.2-.8-.2h-.4v2.1Z"></path>
+    <path d="M16.4,81c.2,0,.4.2.4.4s-.2.4-.4.4-.4-.2-.4-.4.2-.4.4-.4Z"></path>
+    <path d="M20.7,78.9h2.4c0,.8-.2,1.5-.6,2-.2.2-.8,1.1-2.2,1.1s-3-1.3-3-3,1.3-3,3.1-3,1.2.1,1.8.6c.3.2.5.5.7.7l-.5.4c-.2-.2-.4-.4-.6-.6-.3-.2-.7-.5-1.4-.5-1.4,0-2.4,1.1-2.4,2.4s1.3,2.4,2.4,2.4,1.5-.4,1.8-1c.1-.2.2-.5.2-.8h-1.7v-.6Z"></path>
+    <path d="M24.2,81c.2,0,.4.2.4.4s-.2.4-.4.4-.4-.2-.4-.4.2-.4.4-.4Z"></path>
+  </g>
+  <g id="Waves">
+    <path d="M31.4,83.5s13.2-10.5,31.4-10.5,22.1,11.6,33,.7c0,0-7.1,8.6-19.3,8.6-14.4.5-18-13.2-45.1,1.2Z" style="fill: #2b5e99;"></path>
+    <path d="M19.3,73.5s13.2-10.5,31.4-10.5,22.1,11.6,33,.7c0,0-7.1,8.6-19.3,8.6-14.4.5-18-13.2-45.1,1.2Z" style="fill: #3ba4bd;"></path>
+    <path d="M7.3,63.4s13.2-10.5,31.4-10.5,22.1,11.6,33,.7c0,0-7.1,8.6-19.3,8.6-14.4.5-18-13.2-45.1,1.2Z" style="fill: #a9d6dc;"></path>
+  </g>
+  <g id="Lights">
+    <polygon points="64.7 22.8 68.6 23.6 67.2 31.3 63.3 30.6 64.7 22.8" style="fill: #feda6f;"></polygon>
+    <polygon points="72.9 25.1 76.1 26.9 73 34 69.8 32.4 72.9 25.1" style="fill: #feda6f;"></polygon>
+    <polygon points="80.1 29.9 83 32.2 78.7 38.4 76 36.2 80.1 29.9" style="fill: #feda6f;"></polygon>
+    <polygon points="86.6 36.1 88.9 38.9 83.5 44.2 81.3 41.2 86.6 36.1" style="fill: #feda6f;"></polygon>
+    <polygon points="91.3 43.8 93.2 46.7 87 50.7 85.1 47.5 91.3 43.8" style="fill: #feda6f;"></polygon>
+    <polygon points="88.2 55.1 88.9 58.3 95.9 56.5 95.2 53 88.2 55.1" style="fill: #feda6f;"></polygon>
+    <polygon points="89.6 62.2 89.6 65.5 96.6 65.5 96.6 61.9 89.6 62.2" style="fill: #feda6f;"></polygon>
+    <polygon points="66.1 34.4 68.5 35.1 66.9 40.7 64.2 40.1 66.1 34.4" style="fill: #feda6f;"></polygon>
+    <polygon points="72.6 37.2 74.4 38.4 71.5 43.5 69.5 42.1 72.6 37.2" style="fill: #feda6f;"></polygon>
+    <polygon points="77.1 41.2 78.8 42.6 75.3 46.9 73.6 45.6 77.1 41.2" style="fill: #feda6f;"></polygon>
+    <polygon points="81.7 46.5 83 48.1 78.6 51.8 77.2 50.2 81.7 46.5" style="fill: #feda6f;"></polygon>
+    <polygon points="84.9 52.6 85.7 54.7 81 57 80 55.1 84.9 52.6" style="fill: #feda6f;"></polygon>
+    <polygon points="81.9 60.7 81.8 62.9 87.4 62.3 87.2 59.8 81.9 60.7" style="fill: #feda6f;"></polygon>
+    <polygon points="75.7 63.7 75.7 65 79.7 65.1 79.7 63.5 75.7 63.7" style="fill: #feda6f;"></polygon>
+    <polygon points="75.1 59.4 78.7 57.9 78.8 59.4 75.2 60.9 75.1 59.4" style="fill: #feda6f;"></polygon>
+    <polygon points="73.1 55.4 74 56.4 77.4 54.1 76.5 52.9 73.1 55.4" style="fill: #feda6f;"></polygon>
+    <polygon points="71 52 71.8 53 75 50.1 74 49.2 71 52" style="fill: #feda6f;"></polygon>
+    <polygon points="70.6 45.7 72 46.8 69.3 50.4 68.1 49.4 70.6 45.7" style="fill: #feda6f;"></polygon>
+    <polygon points="66.3 43.1 67.7 43.8 66 48.1 64.4 47.4 66.3 43.1" style="fill: #feda6f;"></polygon>
+    <polygon points="65.7 50.2 66.6 50.8 64.9 53.3 64.2 52.6 65.7 50.2" style="fill: #feda6f;"></polygon>
+    <polygon points="68.5 52.6 69.2 53.2 67.1 55.4 66.5 55 68.5 52.6" style="fill: #feda6f;"></polygon>
+    <polygon points="70.6 55.1 71.1 55.7 69 57.5 68.4 57 70.6 55.1" style="fill: #feda6f;"></polygon>
+    <polygon points="72.4 58.4 72.7 59.2 70 60.5 69.7 59.8 72.4 58.4" style="fill: #feda6f;"></polygon>
+    <polygon points="73.3 62 73.4 62.7 70.8 63.1 70.7 62.5 73.3 62" style="fill: #feda6f;"></polygon>
+    <rect x="71.1" y="65.6" width="2.5" height=".8" style="fill: #feda6f;"></rect>
+  </g>
+</svg></svg></g></g><defs><clipPath id="SvgjsClipPath1599"><rect width="1000" height="1000" x="0" y="0" rx="150" ry="150"></rect></clipPath></defs></svg>
