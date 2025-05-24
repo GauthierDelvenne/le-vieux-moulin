@@ -92,10 +92,10 @@
     }
 
     &__image {
-      width: clamp(200px, 15vw, 300px);
-      height: clamp(200px, 15vw, 300px);
+      width: clamp(12.5rem, 15vw, 18.75rem);
+      height: clamp(12.5rem, 15vw, 18.75rem);
       object-fit: cover;
-      border-radius: 50px;
+      border-radius: 3.125rem;
       margin-bottom: 1.25rem;
     }
   }

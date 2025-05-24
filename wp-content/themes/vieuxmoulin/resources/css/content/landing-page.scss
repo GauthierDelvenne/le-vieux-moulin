@@ -80,7 +80,7 @@
     &-text {
       font-size: clamp(1rem, 2vw, 1.25rem);
       margin-bottom: 1.25rem;
-      max-width: 360px;
+      max-width: 22.5rem;
       @include desktop-xl-up {
         font-size: 1.25rem;
       }
@@ -90,10 +90,10 @@
       font-size: clamp(1rem, 2vw, 1.25rem);
 
       @include tablet-up {
-        width: clamp(360px, 50vw, 540px);
+        width: clamp(22.5rem, 50vw, 33.75rem);
       }
       @include desktop-xl-up {
-        width: 540px;
+        width: 33.75rem;
         font-size: 1.25rem;
       }
     }
@@ -101,24 +101,24 @@
 
 
   &__image {
-    width: 300px;
-    height: 180px;
+    width: 18.75rem;
+    height: 11.25rem;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     margin-bottom: 1.25rem;
     @include tablet-up {
-      width: clamp(360px, 50vw, 540px);
-      height: clamp(216px, calc(50vw * 0.6), 324px);
+      width: clamp(22.5rem, 50vw, 33.75rem);
+      height: clamp(13.5rem, calc(50vw * 0.6), 20.25rem);
     }
     @include desktop-xl-up {
-      width: 540px;
-      height: 324px;
+      width: 33.75rem;
+      height: 20.25rem;
     }
   }
 
   &__video {
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
   }
 
 

@@ -59,9 +59,9 @@
   }
 
   &__image {
-    width: clamp(140px, 17vw, 280px);
-    height: clamp(140px, 17vw, 280px);
+    width: clamp(8.75rem, 17vw, 17.5rem);
+    height: clamp(8.75rem, 17vw, 17.5rem);
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 3.125rem;
   }
 }
