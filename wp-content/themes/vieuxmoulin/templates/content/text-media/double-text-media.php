@@ -11,7 +11,7 @@
                 <h2 class="double-text-media-headline" aria-level="2">
                     <?= $headline; ?>
                 </h2>
-                <svg class="underline" width="366" height="70" viewBox="0 0 366 70">
+                <svg class="underline" width="366" height="10" viewBox="0 0 366 10">
                     <use xlink:href="#underline"></use>
                 </svg>
             </div>
