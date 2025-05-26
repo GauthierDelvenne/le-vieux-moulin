@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   margin-top: clamp(3.125rem, 5vw, 6.25rem);
+  @include tablet {
+    justify-content: center;
+  }
   @include tablet-up {
     flex-direction: row;
     gap: clamp(0.8rem, 5vw, 5rem);
@@ -24,6 +27,14 @@
     z-index: -1;
     right: -3rem;
     top: -4rem;
+    transition: transform 0.3s ease;
+    @include tablet-up {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    @include desktop-up {
+      transform: scale(1.15);
+    }
   }
 
   &__position {
@@ -45,7 +56,9 @@
 
       .wave {
         display: none;
+        transition: transform 0.3s ease;
         @include tablet-up {
+          transform: scale(0.8);
           display: block;
           position: absolute;
         }
@@ -80,9 +93,9 @@
     &-text {
       font-size: clamp(1rem, 2vw, 1.25rem);
       margin-bottom: 1.25rem;
-      max-width: 22.5rem;
       @include desktop-xl-up {
         font-size: 1.25rem;
+      max-width: 22.5rem;
       }
     }
 
@@ -106,6 +119,11 @@
     object-fit: cover;
     border-radius: 3.125rem;
     margin-bottom: 1.25rem;
+    @include tablet {
+      width: clamp(18.75rem, 50vw, 22.5rem);
+      height: clamp(11.25rem, calc(50vw * 0.6), 13.5rem);
+
+    }
     @include tablet-up {
       width: clamp(22.5rem, 50vw, 33.75rem);
       height: clamp(13.5rem, calc(50vw * 0.6), 20.25rem);

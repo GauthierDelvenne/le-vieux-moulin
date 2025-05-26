@@ -20,12 +20,23 @@
 .text-media {
   &__position {
     position: relative;
+    .lightblue,.yellow,.darkblue,.green,.light{
+      position: absolute;
+      transition: transform 0.3s ease;
+      @include tablet-up {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+      @include desktop-up {
+        transform: scale(1.15);
+      }
+    }
 
     .lightblue, .yellow {
-      position: absolute;
       left: -7rem;
       top: -2rem;
       z-index: -1;
+
     }
 
     .yellow {
@@ -35,7 +46,6 @@
     }
 
     .darkblue, .green, .light {
-      position: absolute;
       right: -5rem;
       top: 1rem;
       z-index: -1;
