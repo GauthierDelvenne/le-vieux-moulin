@@ -13,3 +13,4 @@ include_once __DIR__ . '/functions/navigation.php';
 include_once __DIR__ . '/functions/project-post.php';
 include_once __DIR__ . '/functions/contact-post.php';
 include_once __DIR__ . '/functions/verify_contact.php';
+include_once __DIR__ . '/functions/schema-org.php';
