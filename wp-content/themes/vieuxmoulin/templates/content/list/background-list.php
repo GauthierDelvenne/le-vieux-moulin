@@ -12,9 +12,7 @@
         <?php endif; ?>
         <?php if ($text !== '' && isset($text)): ?>
             <div class="background-list-text">
-                <p>
                     <?= $text ?>
-                </p>
             </div>
         <?php endif; ?>
         <?php if (have_rows('background-list_content')) : ?>
@@ -38,9 +36,7 @@
                         <?php endif; ?>
                         <?php if ($text !== '' && isset($text)): ?>
                             <div class="background-list-text">
-                                <p>
                                     <?= $text ?>
-                                </p>
                             </div>
                         <?php endif; ?>
                     </article>

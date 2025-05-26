@@ -22,7 +22,7 @@
                         <?php if (!empty($link)): ?>
                             <a class="list-link"
                                href="#<?= $link; ?>">
-                               >
+                                <span class="hidden">Vers <?= $link?></span>
                             </a>
                         <?php endif; ?>
                         <?php if ($headline !== '' && isset($headline)) : ?>

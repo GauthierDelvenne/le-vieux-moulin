@@ -35,7 +35,7 @@
 
                 ?>
                 <div class="double-text-media-content">
-                    <section class="text-media__section_container section_container_<?= esc_attr($class) ?>" id="<?= $class !== '' ? $class : '' ?>">
+                    <section class="text-media__section_container section_container_<?= esc_attr($class) ?>" <?php if($class !== ''):?>id="<?= $class !== '' ? $class : '' ?>"<?php  endif;?>>
                         <?php if (!empty($headline)) : ?>
                             <h3 class="text-media__content-headline" aria-level="3">
                                 <?= esc_html($headline) ?>
