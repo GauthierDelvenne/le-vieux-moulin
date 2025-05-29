@@ -1,13 +1,41 @@
 {
   "wp-content/themes/vieuxmoulin/resources/css/styles.scss": {
-    "file": "assets/css-D0fh3uF9.css",
+    "file": "assets/css-GP4f2BZP.css",
     "src": "wp-content/themes/vieuxmoulin/resources/css/styles.scss",
     "isEntry": true
+  },
+  "wp-content/themes/vieuxmoulin/resources/fonts/mukta-extrabold-webfont.woff": {
+    "file": "assets/mukta-extrabold-webfont-DfsAE3bs.woff",
+    "src": "wp-content/themes/vieuxmoulin/resources/fonts/mukta-extrabold-webfont.woff"
+  },
+  "wp-content/themes/vieuxmoulin/resources/fonts/mukta-extrabold-webfont.woff2": {
+    "file": "assets/mukta-extrabold-webfont-3MTybpyj.woff2",
+    "src": "wp-content/themes/vieuxmoulin/resources/fonts/mukta-extrabold-webfont.woff2"
+  },
+  "wp-content/themes/vieuxmoulin/resources/fonts/mukta-regular-webfont.woff": {
+    "file": "assets/mukta-regular-webfont-TBJqZJRt.woff",
+    "src": "wp-content/themes/vieuxmoulin/resources/fonts/mukta-regular-webfont.woff"
+  },
+  "wp-content/themes/vieuxmoulin/resources/fonts/mukta-regular-webfont.woff2": {
+    "file": "assets/mukta-regular-webfont-Dytw_cBG.woff2",
+    "src": "wp-content/themes/vieuxmoulin/resources/fonts/mukta-regular-webfont.woff2"
+  },
+  "wp-content/themes/vieuxmoulin/resources/fonts/playfairdisplay-variablefont_wght-webfont.woff": {
+    "file": "assets/playfairdisplay-variablefont_wght-webfont-CEFugLAW.woff",
+    "src": "wp-content/themes/vieuxmoulin/resources/fonts/playfairdisplay-variablefont_wght-webfont.woff"
+  },
+  "wp-content/themes/vieuxmoulin/resources/fonts/playfairdisplay-variablefont_wght-webfont.woff2": {
+    "file": "assets/playfairdisplay-variablefont_wght-webfont-BxViMLRo.woff2",
+    "src": "wp-content/themes/vieuxmoulin/resources/fonts/playfairdisplay-variablefont_wght-webfont.woff2"
   },
   "wp-content/themes/vieuxmoulin/resources/js/main.js": {
     "file": "assets/js-l0sNRNKZ.js",
     "name": "js",
     "src": "wp-content/themes/vieuxmoulin/resources/js/main.js",
     "isEntry": true
+  },
+  "wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg": {
+    "file": "assets/bandeauv2-CSX44zBX.svg",
+    "src": "wp-content/themes/vieuxmoulin/resources/svg/bandeauv2.svg"
   }
 }
