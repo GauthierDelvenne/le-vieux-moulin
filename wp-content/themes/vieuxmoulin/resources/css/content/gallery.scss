@@ -24,8 +24,12 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1.25rem;
+      min-height: calc(clamp(12.5rem, 15vw, 18.75rem) * 1.5);
       &-item{
         width: fit-content;
+      }
+      @include desktop-xl-up{
+        gap: 5rem;
       }
     }
 
@@ -36,11 +40,15 @@
       border-radius: 3.125rem;
       margin-bottom: 1.25rem;
       transition: transform 0.3s ease, padding 0.3s ease;
-
       &:hover,
       &:focus {
         transform: scale(1.5);
         padding:2.25rem;
+
+        @include desktop-xl-up{
+          padding:3rem;
+
+        }
       }
     }
   }
