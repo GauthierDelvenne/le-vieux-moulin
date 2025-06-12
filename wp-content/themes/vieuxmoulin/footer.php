@@ -37,6 +37,7 @@
 
         <ul class="footer__partenaire__container">
             <li class="partenaire_item">
+                <a href="https://www.provincedeliege.be" target="_blank"><span class="hidden">Province de Liège</span></a>
                 <svg  xmlns="http://www.w3.org/2000/svg" version="1.1"  width="89px"  height="89px" viewBox="0 0 595.3 563.6">
                     <title>Logo de la Fédération Wallonie-Bruxelles</title>
                     <desc>Un des partenaires de la SRG Vieux Moulin</desc>
@@ -50,6 +51,7 @@
                 </svg>
             </li>
             <li class="partenaire_item">
+                <a href="https://www.aidealajeunesse.cfwb.be" target="_blank"><span class="hidden">Aide à la jeunesse</span></a>
                 <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="89px"  height="89px" viewBox="0 0 45.3 40.2">
                     <title>Logo de l’aide à la jeunesse</title>
                     <desc>Un des partenaires de la SRG Vieux Moulin</desc>
