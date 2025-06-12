@@ -91,9 +91,23 @@
         font-size: 2.25rem;
       }
     }
-    &-container{
+
+    &-container {
       margin-top: 1.25rem;
 
+    }
+
+    &-link {
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      font-weight: 800;
+      background-color: $lightblue;
+      padding: 0.4rem;
+      border-radius: 3.125rem;
+
+      &:hover,
+      &:focus {
+        color: $darkblue;
+      }
     }
 
     &-text {
