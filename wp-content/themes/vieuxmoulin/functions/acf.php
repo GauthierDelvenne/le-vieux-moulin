@@ -1248,6 +1248,26 @@ add_action( 'acf/include_fields', function() {
                         'display' => 'block',
                         'sub_fields' => array(
                             array(
+                                'key' => 'field_684d3f04bddbf',
+                                'label' => 'Titre',
+                                'name' => 'title',
+                                'aria-label' => '',
+                                'type' => 'text',
+                                'instructions' => '',
+                                'required' => 0,
+                                'conditional_logic' => 0,
+                                'wrapper' => array(
+                                    'width' => '',
+                                    'class' => '',
+                                    'id' => '',
+                                ),
+                                'default_value' => '',
+                                'maxlength' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                            ),
+                            array(
                                 'key' => 'field_68210f6e8f195',
                                 'label' => 'Image',
                                 'name' => 'image',

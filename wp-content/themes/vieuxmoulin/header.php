@@ -33,6 +33,7 @@ require __DIR__ . '/resources/svg/sprite.php'
     </svg>
     </div>
     <nav class="header__nav" aria-label="Menu principal">
+        <h2 class="hidden">Menu de navigation principal</h2>
         <input type="checkbox" id="burger" role="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
         <ul id="menu" class="header__nav__container">
             <?php foreach (dw_get_navigation_links('header') as $link): ?>

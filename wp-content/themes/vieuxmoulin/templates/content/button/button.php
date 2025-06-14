@@ -1,3 +1,4 @@
+<?php $title = get_sub_field('title'); ?>
 <?php $image = get_sub_field('image'); ?>
 <?php $button1 = get_sub_field('text_button_1'); ?>
 <?php $button2 = get_sub_field('text_button_2'); ?>
@@ -5,13 +6,19 @@
 <?php
 $current_path = $_SERVER['REQUEST_URI'];
 
-function getPathFromUrl($url) {
+function getPathFromUrl($url)
+{
     $parsed = parse_url($url);
     return $parsed['path'] ?? '/';
 }
+
 ?>
 
 <section class="button__section_container section_container_<?= $class !== '' ? $class : '' ?>">
+    <?php if (!empty($title)): ?>
+        <h2 class="hidden"><?= $title ?></h2>
+    <?php endif; ?>
+
     <?php if (!empty($image)): ?>
         <div class="button-media">
             <?= responsive_image($image, ['classes' => 'button__image', 'lazy' => 'lazy']) ?>
